@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: #e95420; /* Orange background color */
+            border-radius: 10px; /* Rounded corners */
+        }
+        .icon {
+            position: relative;
+            width: 40px;
+            height: 30px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .icon::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid white;
+        }
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: #e95420;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 3px;
+        }
+        .dots {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <title>Chat Icon</title>
+</head>
+<body>
+    <div class="icon-container">
+        <div class="icon">
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

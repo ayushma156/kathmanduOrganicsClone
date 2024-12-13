@@ -1,0 +1,952 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+.logo img{
+  height: 60px;
+  width: 60px;
+  display:inline;
+  
+}
+header{
+  margin-top: 40px;
+ 
+}
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 199px;
+  
+
+}
+.container a{
+  font-size: 18px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: black;
+  text-decoration: none;
+  /* display: flex;       */
+}
+#searchbar input{
+  font-family:'Times New Roman', Times, serif;        
+
+  width: 300px;
+  /* background-color: green; */
+  border-radius:  40px 0 0 40px;
+  padding: 10px;
+  position: relative;
+}
+
+.search{
+  border-radius: 0 40px 40px 0;
+  height: 40px;
+  width: 64px;
+  cursor: pointer;
+  background-color: rgb(19, 60, 52);
+  position: absolute;
+  
+}
+.search i{
+  color: white;
+}
+
+.label i{
+  font-size: large;
+}
+#bag{
+  margin-left: 10px;
+}
+/* --------------------------------------------------------------------menubar------------------------------------------------------------------------------------------------------------- */
+.menu{
+  background-color:rgb(214, 212, 212);
+  gap: 40px;
+  display: flex;
+  justify-content:center;
+  font-size: 13px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 28px;
+  list-style: none;
+  padding: 5px;
+  border-radius: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  
+ 
+}
+a{
+  padding: 5px 0;
+}
+.menu a{
+  text-decoration: none;
+  color:black;
+  font-family:Arial, Helvetica, sans-serif;
+  cursor: default;
+  
+}
+.sub-menu{
+  display: none;
+  position: relative;
+  
+}
+
+/* .menu li:hover .sub-menu{
+  display:inline;
+  position: absolute ;
+  top: 22%;
+  left: 32%;
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color:white;
+  padding-right: 30px;  
+} */
+.menu li:hover #zero{
+  display:inline;
+  position: absolute ;
+  top: 22%;
+  left: 28%;
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color:white;
+  padding-right: 30px;  
+}
+.menu li:hover #one{
+  display:inline;
+  position: absolute ;
+  top: 22%;
+  left: 37%;
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color:white;
+  padding-right: 30px;  
+}
+.menu li:hover #two{
+  display:inline;
+  position: absolute ;
+  top: 22%;
+  left: 46%;
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color:white;
+  padding-right: 30px;  
+}
+.menu li:hover #three{
+  display:inline;
+  position: absolute ;
+  top: 22%;
+  left: 53%;
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color:white;
+  padding-right: 30px;  
+}
+.menu li:hover #four{
+  display:inline;
+  position: absolute ;
+  top: 22%;
+  left: 64%;
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color:white;
+  padding-right: 30px;  
+}
+.menu li:hover .sub-menu li{
+ 
+  width:75px;
+  padding: 5px;
+  border-bottom: 1px white;
+  background:transparent;
+  transition:0.4 ease;
+  text-align: left;
+ border-radius:  0px;
+}
+
+/* --------------------------------------------------- advertisement------------------------------------------------------------ */
+.advertisement{
+  animation: transition 10s steps(1) infinite;
+
+}
+
+
+.a{
+  background-color:rgb(7, 86, 159);
+  padding: 15px;
+  color:white;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 70px;
+
+}
+.b{
+  background-color:rgb(209, 108, 36);
+  padding: 15px;
+  color:white;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  /* margin-top: 70px; */
+
+}
+.c{
+  
+    background-color:rgb(0, 34, 66);
+
+    padding: 15px;
+    color:white;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    /* margin-top: 70px; */
+  
+  
+  
+}
+.d{
+  background-color:grey;
+
+  padding: 15px;
+  color:white;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  /* margin-top: 70px; */
+
+}
+
+
+
+.nepali img{
+  height: 500px;
+  width: 600px;
+  margin-left: 450px;
+  margin-top: 10px;
+}
+
+/* -------------------------------------image slider--------------------------- */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 450px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img{
+  height:550px;
+  width:450px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+
+
+/* --------------------The dots/bullets/indicators-------------------------------- */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s ease;
+}
+
+
+Fading animation
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.hero-heading{
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 50px;
+  font-weight:999;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.section-hero-content{
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+  margin-top: 40px;
+
+}
+.hero-para{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+  letter-spacing: 0.5px;
+}
+.read{
+  color: black;
+  /* padding: 20px; */
+  text-decoration: none;
+  margin-left: 300px;
+  font-weight: 600;
+}
+.read:hover{
+  /* font-size:20px; */
+  text-decoration: underline;
+  letter-spacing: 1px;
+  transition: 1 sec;
+
+}
+
+
+.bttn{
+  border: 1px solid transparent;
+  padding: 0.5rem 1.5rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.bttn:hover{
+  background-color : white;
+  color: black;
+  border-color: black;
+}
+  
+
+   /*------------------------------------------------------------ image gallery ---------------------------------------------------------------------------------------------------------- */
+ .categories{
+  /* background-color: bisque; */
+  margin-top: 20px;
+  /* margin-left: 350px; */
+  
+ }
+ .categories img{
+  height: 140px;
+ }
+ .categories h1{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  font-weight:bolder;
+  font-size: 30px;
+  margin-bottom: 30px;
+ }
+ .gallery-1{
+  display: flex;
+  justify-content:center;
+  gap: 25px;
+ }
+ .gallery-2{
+  display: flex;
+  justify-content:center;
+  gap: 15px;
+  margin-top: 25px;
+ }
+/* ------------------------------------------------------------chose--------------------------------------------- */
+ .choose{
+  background-image: linear-gradient(rgb(74,145,131),rgb(74,145,131),rgb(74,145,131));
+  
+  padding: 50px;
+  color: black;
+  font-size: 10px;
+  margin-top: 30px;
+ }
+ 
+ .choose h1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+ }
+ .choose h2{
+  text-align: center;
+  font-weight: 100;
+  font-size:23px;
+ }
+ .flex{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  font-size: 14px;
+ }
+ .flex h3{
+  font-size: 20px;
+ }
+ .flex p{
+  font-size: 15px;
+ }
+
+ .flex a{
+  font-size: 35px ;
+  color: rgba(0, 0, 0, 0.566);
+  margin-left: 65px;
+ }
+ .express h3{
+  margin-left: 10px;
+ }
+ .express p{
+  margin-right: 10px;
+ }
+ .EASY h3{
+  margin-left: 35px;
+ }
+ .EASY p{
+  margin-right: 10px;
+ }
+ .FAIR h3{
+  margin-left: 40px;
+ }
+
+
+ /* -----------------------s.icon=------------------------ */
+ .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: #e95420; /* Orange background color */
+  border-radius: 10px; /* Rounded corners */
+  /* position: sticky; */
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+.icon {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+}
+.icon::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+}
+.circle{
+  width: 8px;
+  height: 8px;
+  background-color: #e95420;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 3px;
+}
+.circles {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+ /* --------------------------------------------------------insta ------------------------------------------------------------------------------------------------------------------ */
+
+
+ .instagram{
+  margin-top: 60px;
+  margin-left: 300px;
+ }
+ .insta-heading{
+  display: flex;
+  gap:20px;
+  
+ }
+ .discription{
+  display: flex;
+  gap: 15px;
+ }
+ .follow{
+  margin-left: 400px;  
+ 
+ }
+
+ .follow a{
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+ }
+  .btn{
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color:white;
+  border-color: rgba(0, 0, 0, 0.411);
+ 
+ }
+ .bio{
+  margin-left: 80px;
+ }
+ .bio .local{
+  color: rgb(128, 128, 128);
+ }
+ .bio a{
+  color:rgb(74,145,131);
+  text-decoration: none;
+ }
+ /* ------------------------------image part of insta ---------------------------------- */
+ .image{
+  margin-top: 10px;
+  /* background-color: aqua; */
+ }
+ .image img{
+  border: 1px solid #E7E7E7;border-width: 1px 1px 1px 1px;
+ }
+ 
+ .instaimg1 , .instaimg2{
+  display: flex;
+  
+
+
+  gap: 30px ;
+  margin-top: 15px;
+ }
+.instaimg1 img{
+  height: 300px;
+  
+}
+.instaimg2 img{
+  height: 300px;
+}
+
+.load{
+  margin-top: 70px;
+  margin-left: 400px;
+}
+.load a{
+  text-decoration: none;
+  color:black ;
+}
+/*----------------------------------------------------------- form------------------------- */
+
+.area h2{
+  font-size: 35px;
+  margin-left: 300px;
+  margin-top: 40px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.validation{
+  margin-top: 30px;
+  margin-left: 300px;
+  margin-right: 255px;
+  box-sizing: border-box;
+  
+}
+
+.first{
+  display:flex;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+.second{
+  display:flex;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.queries{
+  margin-left: 5px;
+}
+.one{
+  border-radius: 30px 30px 30px 30px;
+  padding-left: 120px;
+  padding-right:120px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(206, 196, 196, 0.311);
+  border-style: none;
+}
+.one:hover{
+  background-color: rgba(74, 145, 131, 0.421)
+  
+}
+
+
+
+.first,.second, .queries p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  font-size: 12px;
+}
+.policy{
+    
+  font-size: 15px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+.but{
+  display: flex;
+  gap: 500px;
+}
+.subscribe button{
+  padding: 16px;
+  background-color:rgb( 34,206,136);
+  border-style: hidden;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+.subscribe button:hover{
+  background-color: rgb(142, 40, 128);
+  color: white;
+  transition:  0.4s ease 0s;
+
+} 
+
+
+/* -----------------------------------footer------------------------------------------------------- */
+.footer{
+  margin-top: 20px;
+  font-size: 15px;
+  padding: 30px;
+  background-color:rgb(96,94,94);
+  font-weight: bolder;
+  font-size: 14px;
+
+ }
+ .footer1{
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap:90px;
+ }
+.footer1 a{
+  color: white;
+  text-decoration: none;
+}
+.social{
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+}
+.social a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+.copyright{
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 10px;
+}
+/*------------------------ media -------------------------------- */
+@media  (max-width: 500px) { 
+
+  .logo img{
+    height: 150px;
+    width: 150px;
+    display:inline;
+    margin-left: 20px;
+  }
+  .container{
+    /* background-color: #e95420; */
+    width: 100%;
+    margin-left: 700px;
+    /* font-size: 40px; */
+    
+  }
+  #searchbar input{
+    font-family:'Times New Roman', Times, serif;        
+    margin-top: 20px;
+    width: 700px;
+    /* background-color: green; */
+    border-radius:  40px 0 0 40px;
+    padding: 10px;
+    position: relative;
+    font-size: 45px;
+  }
+  .search{
+    border-radius: 0 40px 40px 0;
+    height: 75px;
+    width: 70px;
+    cursor: pointer;
+    background-color: rgb(19, 60, 52);
+    position: absolute;
+    margin-top: 20px;
+    
+  }
+  .search i{
+    color: white;
+    font-size: 30px;
+  }
+  .label{
+    display: flex;
+    gap: 5px;
+    margin-left: 40px;
+  } 
+  .label a{
+    font-size: 40px;
+
+  }
+  .label i{
+    font-size: 40px;
+    margin-left: 10px;
+  }
+  .menu{
+    gap: 100px;
+    display: flex;
+    justify-content:center;
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 1000px;
+    padding-right: 990px;
+    border-radius: 50px;
+   margin-left: 10px; 
+    margin-right: 50px;
+    
+   
+  }
+  .a{
+   display: none;
+  }
+
+  .nepali img{
+    height: 950px;
+    width: 1060px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top:100px;
+    margin-bottom: 30px;
+  }
+  .section-hero-content{
+    margin-left:900px;
+    margin-top: 90px;
+   
+  }  
+  .categories{
+    
+    margin-top: 50px;
+    margin-left: 650px;
+    margin-bottom: 100px;
+    
+   }
+   .hero-heading{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size:70px;
+    font-weight:999;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  .hero-para{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+  }
+  .mySlides img{
+    height:1095px;
+    width:940px;
+  }
+  .read{
+    color: black;
+    text-decoration: none;
+    margin-left: 300px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .bttn{
+    border: 1px solid transparent;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    margin-left: 100px;
+    font-size: 25px;
+  }
+  .categories{
+   
+    margin-top: 30px;
+    margin-left: 900px;
+    
+   }
+   .categories h1{
+    margin-top: 40px;
+    font-size: 40px;
+
+   }
+   .categories img{
+    height: 200px;
+   }
+   
+   .choose{    
+  display: none;
+   }
+   .icon-container {
+    width: 90px;
+    height: 90px;
+  }
+
+  .instagram{
+    font-size: 30px;
+  }
+  
+  .local{
+    display: none;
+  }
+  .follow a{
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+   }
+   .btn{
+    padding: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color:white;
+    border-color: rgba(0, 0, 0, 0.411);
+   
+   }
+   .instaimg1 img{
+    height: 500px;
+    
+  }
+  .instaimg2 img{
+    height: 500px;
+  }
+  .load{
+    margin-top: 70px;
+    margin-left: 600px;
+  }
+  .load a{
+    text-decoration: none;
+    color:black ;
+    font-size: 30px;
+  }
+  .area h2{
+    font-size: 40px;
+    margin-left: 800px;
+    margin-top: 40px;
+   width: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .validation{
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 350px;
+    margin-right: 255px;
+    box-sizing: border-box;
+    
+  }
+  .one{
+    border-radius: 100px 100px 100px 100px;
+    padding-left: 280px;
+    padding-right:280px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(206, 196, 196, 0.311);
+    border-style: none;
+  }
+  
+.first,.second, .queries p{
+  font-size: 30px;
+}
+.policy{
+    
+  font-size: 30px;
+  width: 100%;
+}
+
+.subscribe button{
+  padding: 60px;
+  background-color:rgb( 34,206,136);
+  border-style: hidden;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 200px;
+  font-size: 40px;
+  
+  /* display: none; */
+}
+
+.footer{
+  width: 100%;
+  margin-top: 30px;
+  font-size: 15px;
+  background-color:rgb(96,94,94);
+  font-weight: bolder;
+  font-size: 14px;
+  width: 100%;
+  /* margin-left:10px; */
+  padding-left: 990px;
+  padding-right: 1050px;
+
+
+ }
+ .footer1{
+  gap:100px;
+ }
+ .footer1 a{
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+}
+ .social a{
+  text-decoration: none;
+  color: white;
+  font-size: 60px;
+}
+.copyright{
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 10px;
+  font-size: 40px;
+  width: 100%;
+}
+
+}
